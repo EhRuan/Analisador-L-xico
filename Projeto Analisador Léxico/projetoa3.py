@@ -31,7 +31,7 @@ class AnalisadorLexico:
 
 # testando o analisador
 if __name__ == "__main__":
-    print("Insira o código a ser analisado (várias linguagens são suportadas):")
+    print("Insira o código: ")
     code = input(">>> ")
 
     lexer = AnalisadorLexico()
