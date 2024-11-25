@@ -9,7 +9,7 @@ class AnalisadorLexico:
             ('KEYWORD', r'\b(if|else|while|for|def|return|class|int|float|print|var|function|let)\b'),
             ('Operador', r'[+\-*/=<>!&|]+'),
             ('String', r'".*?"|\'.*?\''),
-            ('Pontuação', r'[;,:.{}()\[\]]'),
+            ('Pontuação', r'[;,:.{}?()\[\]]'),
             ('WHITESPACE', r'\s+'),
             ('COMMENT', r'//.*?$|/\*.*?\*/|#.*?$'),
             ('MISMATCH', r'.'),
