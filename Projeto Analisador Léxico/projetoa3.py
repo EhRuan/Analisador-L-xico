@@ -4,12 +4,12 @@ class AnalisadorLexico:
     def __init__(self):
         # definiçao generica de tokens
         self.token_specification = [
-            ('NUMBER', r'\b\d+(\.\d+)?\b'),
-            ('IDENTIFIER', r'[A-Za-z_]\w*'),
+            ('Numero', r'\b\d+(\.\d+)?\b'),
+            ('Identificador', r'[A-Za-z_]\w*'),
             ('KEYWORD', r'\b(if|else|while|for|def|return|class|int|float|print|var|function|let)\b'),
-            ('OPERATOR', r'[+\-*/=<>!&|]+'),
-            ('STRING', r'".*?"|\'.*?\''),
-            ('PUNCTUATION', r'[;,:.{}()\[\]]'),
+            ('Operador', r'[+\-*/=<>!&|]+'),
+            ('String', r'".*?"|\'.*?\''),
+            ('Pontuação', r'[;,:.{}()\[\]]'),
             ('WHITESPACE', r'\s+'),
             ('COMMENT', r'//.*?$|/\*.*?\*/|#.*?$'),
             ('MISMATCH', r'.'),
